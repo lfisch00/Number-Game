@@ -1,20 +1,34 @@
 <!DOCTYPE html>
 <html>
-
-<head>
+  <head>
     <meta charset="utf-8">
     <title>JS Page</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <link rel="stylesheet" href="style.css">
-</head>
+    <meta charset="utf-8">
 
-<body>
-    <div class="wrapper">
-        Test
-    <!-- Add markup here -->
+    <title>Number guessing game</title>
+  </head>
+
+  <body>
+    <h1>The Number Wizard</h1>
+
+    <p>Can you read The Wizard's mind? Pick a number between 1 and 100 and see if you can guess it within 10 tries.</p>
+
+    <div class="form">
+      <label for="guessField">Enter a guess: </label>
+      <input type="text" id="guessField" class="guessField">
+      <input type="submit" value="Submit guess" class="guessSubmit">
     </div>
-    <script src="script.js"></script>
-</body>
 
+    <div class="resultParas">
+      <p class="guesses"></p>
+      <p class="lastResult"></p>
+      <p class="lowOrHi"></p>
+    </div>
+	  <div class="wizard"><img src="wizard.png" alt="The Cat Wizard"></div>
+
+    <script src="script.js"> </script>
+  </body>
 </html>
